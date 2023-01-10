@@ -1,0 +1,1 @@
+<div class="bg-fixed bg-landing"></div>

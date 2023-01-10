@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function () {return view('welcome');});
+
+Route::prefix('components')->name('components.')->group(function () {
+    Route::get('/landing', function () {return view('components/landing');});
 });
